@@ -78,117 +78,65 @@ Running The Emulator (emu8086) Intro 8086 Microprocessor Emulator, also known as
 ## Programs for arithmetic  operations
 
 ## Addition  of 8 bit ALP 
+### Program :
 ```
-org 100h
-mov al,024h;
-mov bl,al;
-add bl,al;
-mov [0123h],bl;
-ret
+start:
+MOV AL,04
+MOV BL,03
+ADD AL,BL
+HLT
 ```
 
+## Output :
+![image](https://github.com/user-attachments/assets/39a9ce90-6850-40be-979e-42f7a22e4d12)
 
-## Output  
- ![image](https://github.com/user-attachments/assets/687f6d30-adbf-4d56-8d38-4b4b8eefd351)
+ 
+## Subtraction of 8 bit numbers  ALP 
 
-## Subtraction   of 8 bit numbers  ALP 
- ```
-mov al,24h
-mov bl,14h
-sub al,bl
-hlt
-
+## Program :
 ```
-## Output  
-![image](https://github.com/user-attachments/assets/f910925d-634b-46a7-88ac-22a386e7941a)
+start:
+MOV AL,05
+MOV BL,03
+SUB AL,BL
+HLT
+```
 
+## Output :
+![image](https://github.com/user-attachments/assets/bb2be893-a79b-4355-82f1-40fd9de2e00f)
 
 
 ## Multiplication alp 
-```
-org 100h
-mov al,10h
-mov bl,6h
-mul bl
-hlt
-ret
-```
 
+### Program :
+```
+start:
+MOV AL,03
+MOV BL,03
+MUL BL
+HLT
+```
  ## Output  
-
-![image](https://github.com/user-attachments/assets/3653d06d-6951-43e3-ab16-d2d7825e9a58)
-
+![image](https://github.com/user-attachments/assets/2e1dce05-e4ab-4c3b-8707-1efa2f7f7780)
 
 
 ## Division alp 
+
+### Program :
 ```
-org 100h
-mov al,40h
-mov bl,2h
-div bl
-hlt
-ret
-```
-## Output  
-
-![image](https://github.com/user-attachments/assets/75e0d9e2-0a02-4074-b5d2-f45964eef0b4)
-
-
-
-## Programs for logical operators
-
-# AND
-```
-MOV [SI],AX;
-MOV AX,0A32H;
-MOV BX,0B13H;
-AND AX,BX;
+start:
+MOV AL,05
+MOV BL,05
+DIV BL
+HLT
 ```
 
-# OUTPUT
-![image](https://github.com/user-attachments/assets/7f08c772-00d6-40aa-b14d-1505a009cbdf)
-
-
-# OR
-```
-org 100h
-
-MOV SI,0532H;
-MOV AX,0A32H;
-MOV BX,0B13H;
-OR AX,BX;
-ret
-```
-
-# OUTPUT
-![image](https://github.com/user-attachments/assets/a8c05c1f-f3ea-42ad-a62e-b01cff6f2dac)
-
-# NOT
-```
-MOV [SI+4],AX;
-MOV AX,0A32H;
-NOT AX;
-MOV [SI+6],AX;
-```
-# OUTPUT
-![image](https://github.com/user-attachments/assets/21bbbb81-5f0a-46bf-9337-eb4399ee64b3)
-
-# XOR
-```
-org 100h
-
-MOV [SI+4],AX;
-MOV AX,0A32H;
-NOT AX;
-MOV [SI+6],AX;
-ret
-```
-# OUTPUT
-![image](https://github.com/user-attachments/assets/8b89a041-1d9b-4501-ab20-701b5d155b9c)
+## Output :
+![image](https://github.com/user-attachments/assets/13e9c573-7656-45db-94e1-c928c66760f0)
 
 
 ## Result :
- Thus, a program is executed on ALP for the fundamental arithmetic and logical operations.
+Thus, ALP for fundamental arithmetic and logical operations are executed successfully.
 
 
 
