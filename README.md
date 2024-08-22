@@ -1,7 +1,7 @@
 # EXPERIMENT--01-ALP-FOR-8086
-Name : Arikatla Hari Veera Prasad
-Roll no :212223240014
-Date of experiment :22-08-2024
+# Name : Arikatla Hari Veera Prasad
+# Roll no :212223240014
+# Date of experiment :22-08-2024
 
 
 
